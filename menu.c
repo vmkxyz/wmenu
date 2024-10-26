@@ -25,13 +25,13 @@
 struct menu *menu_create(menu_callback callback) {
 	struct menu *menu = calloc(1, sizeof(struct menu));
 	menu->strncmp = strncmp;
-	menu->font = "monospace 10";
-	menu->normalbg = 0x222222ff;
-	menu->normalfg = 0xbbbbbbff;
-	menu->promptbg = 0x005577ff;
-	menu->promptfg = 0xeeeeeeff;
-	menu->selectionbg = 0x005577ff;
-	menu->selectionfg = 0xeeeeeeff;
+	menu->font = "Saucecodepronf 8";
+	menu->normalbg = 0x11111bff;
+	menu->normalfg = 0xcdd6f4ff;
+	menu->promptbg = 0x1e1e2eff;
+	menu->promptfg = 0xcdd6f4ff;
+	menu->selectionbg = 0x1e1e2eff;
+	menu->selectionfg = 0xcdd6f4ff;
 	menu->callback = callback;
 	return menu;
 }
@@ -675,3 +675,4 @@ void menu_keypress(struct menu *menu, enum wl_keyboard_key_state key_state,
 		}
 	}
 }
+

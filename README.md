@@ -1,3 +1,7 @@
+# fork
+
+I modified the colors, font and font size in menu.c
+
 # wmenu
 
 wmenu is an efficient dynamic menu for Sway and wlroots based Wayland
